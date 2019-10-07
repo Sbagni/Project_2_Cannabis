@@ -1,0 +1,135 @@
+/* ****************************************************************************************** */
+/* STYLING ON NAVIGATION BAR */
+/* ****************************************************************************************** */
+/* style for navigation bar  */
+
+.nav {
+  margin-top: 0;
+  text-align: left;
+  line-height: 40px;
+  
+}
+.menu {
+  margin:0 30px 0 0;
+  font-family: 'Roboto', sans-serif;
+  margin-left: auto;
+}
+
+.menu a{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: rgb(17, 51, 51);
+  clear: right;
+}
+
+/* related to hamburger settlings */
+label {
+
+  display: none;
+  margin: 0 30px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  margin-left: auto;
+}
+
+/* to remove the checkmark */
+#toggle {
+  display: none;
+  margin-left: auto;
+}
+
+
+/* hamburger mune settings */
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+}
+
+
+/* ****************************************************************************************** */
+/* TICKERS */
+/* ****************************************************************************************** */
+
+
+.col-xs-1-10,
+.col-sm-1-10 {
+  position: relative;
+  min-height: 1px;
+}
+
+.col-xs-1-10 {
+  width: 10%;
+  float: left;
+  
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-10 {
+    width: 10%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1-10 {
+    width: 10%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-10 {
+    width: 10%;
+    float: left;
+  }
+}
+
+.tickersImage {
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: 'Khand', sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+/* ****************************************************************************************** */
+/* TEMPORARY */
+/* ****************************************************************************************** */
+
+
+#structure{
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(6, 7, 6);
+  text-align: center;
+}
+
+
+/* ****************************************************************************************** */
+/* TEMPORARY */
+/* ****************************************************************************************** */
