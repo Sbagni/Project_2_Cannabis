@@ -14,7 +14,7 @@ app = Flask(__name__)
 def home():
     """List all available api routes."""
     # return "/api/v1.0/"
-    return render_template(os.path.join(basedir, 'templates', 'P3_HOME.html'))
+    return render_template(os.path.join('P3_HOME.html'))
 
 
 

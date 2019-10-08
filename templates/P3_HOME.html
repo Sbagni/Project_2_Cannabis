@@ -1,160 +1,218 @@
-<!DOCTYPE html>
-<html>
-
-<!-- HEAD OF THE WEBSITE -->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>HOME PAGE</title>
-  <meta name="discription" content="">
-  <meta name="viewport" content="width=device-width, initial=scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" \
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="project3.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Khand&display=swap" rel="stylesheet">
-</head>
-
-
-<body>
-  <!-- navigation bar part -->
-
-  <div class="container-fluid" style="width: 100% ; margin: 0 auto;">
-    <div class="row" style="background-color: rgb(106, 137, 240)">
-        <div class="col">
-          <div class="nav">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-
-            <div class="menu">
-
-            <div style="display: inline;">
-                <a href="P3_home.html">Cannabis Industry</a>
-            </div>
-  
-              <div style="display: inline;">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                  data-toggle="dropdown" aria-expanded="false">Companies </a>
-  
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="https://www.canopygrowth.com/">Canopy Growth [WEED]</a>
-                  <a class="dropdown-item" href="https://www.auroramj.com/">Aurora [ACB]</a>
-                  <a class="dropdown-item" href="https://thecronosgroup.com/">The Cronos Group [CRON]</a>
-                  <a class="dropdown-item" href="https://aphria.ca/">Aphria [APHA]</a>
-                  <a class="dropdown-item" href="https://www.hempinc.com/">Hemp Inc [HENO]</a>
-                  <a class="dropdown-item" href="https://www.organigram.ca/">Organigram [OGI]</a>
-                  <a class="dropdown-item" href="https://www.weedmd.com/">WeedMD [WMD]</a>
-                  <a class="dropdown-item" href="https://www.supreme.ca/">The Supreme Cannabis Company [FIRE]</a>
-                  <a class="dropdown-item" href="https://originhouse.com/">CannaRoyalty Corp [OH]</a>
-                  <a class="dropdown-item" href="https://www.terrascend.com/">Terrascend [TER]</a>
-                </div>
-              </div>
-  
-  
-              <div style="display: inline;">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2"
-                  data-toggle="dropdown" aria-expanded="false">Charts </a>
-  
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                  <a class="dropdown-item" href="Comparison_1.html">Chart_type 1</a>
-                  <a class="dropdown-item" href="Comparison_2.html">Chart_type 2</a>
-                  <a class="dropdown-item" href="Comparison_3.html">Chart_type 3</a>
-                  <a class="dropdown-item" href="Comparison_4.html">Chart_type 4</a>
-                </div>
-              </div>
-  
-              <div style="display: inline;">
-                <a href="team.html">Team</a>
-              </div>
-  
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-    </div>
-
-
-<!-- TICKERS  -->
-
-      <div class="row tickersImage">
-        <div class="col-xs-1-10">
-          <a href="Company_1.html" style="text-decoration: none">WEED</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_2.html" style="text-decoration: none">ACB</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_3.html" style="text-decoration: none">CRON</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_4.html" style="text-decoration: none">APHA</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_5.html" style="text-decoration: none">HENO</a>
-        </div>
-         <div class="col-xs-1-10">
-          <a href="Company_6.html" style="text-decoration: none">OGI</a>
-        </div>
-          <div class="col-xs-1-10">
-          <a href="Company_7.html" style="text-decoration: none">WMD</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_8.html" style="text-decoration: none">FIRE</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_9.html" style="text-decoration: none">OH</a>
-        </div>
-        <div class="col-xs-1-10">
-          <a href="Company_10.html" style="text-decoration: none">TER</a>
-        </div>
-      </div>
-    
-<br>
-<br>
-<br>
-
+{% extends "base.html"%}
+{% block content %}
   <!-- BODY OF THE PAGE -->
-  <div id="structure" class="container">
+<div id="structure" class="container">
 
-      <div id="structure" class="row">
-        <p>Project Simmary/Notes </p>
-      </div>
-  
-  
-      <div id="structure" class="row">
-        <div id="structure" class="col-md-4">
-          <p>Summary Chart 1</p>
-        </div>
-  
-        <div id="structure" class="col-md-4">
-          <p>Summary Chart 2</p>
-        </div>
-  
-        <div id="structure" class="col-md-4">
-          <p>Summary Chart 3</p>
-        </div>
-      </div>
-  
+    <div id="structure" class="col-md-12">
+        <p class="bold-font">Below are the 10 largest cannabis companies in Canada by market capitalization</p>
     </div>
 
+<div id="structure" class="row homepage-graph">
+  <div id="chart1" class='with-3d-shadow with-transitions'>
+    <svg></svg>
+</div>
+</div>
 
-  <!-- For drop down -->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<div id="structure" class="col-md-12">
+  <br>
+    <p>This graph shows for each company the disribution between current assets, curreny liabilities and equity.</p>
+    <br> </br></div>
+  </div>
 
 
-</body>
 
-</html>
+<div id="structure" class="row">
+  <div id="structure" class="col-md-4">
+    <p class="bold-font">Current assets</p>
+    <p>Current assets represent all the assets of a company that are expected to be conveniently sold, consumed, utilized or exhausted through the standard business operations, which can lead to their conversion to a cash value over the next one year period. Since current assets is a standard item appearing in the balance sheet, the time horizon represents one year from the date shown in the heading of the company's balance sheet.</p>
+  </div>
+
+  <div id="structure" class="col-md-4">
+      <p class="bold-font">Current liabilities</p>
+      <p>Current liabilities are a company's short-term financial obligations that are due within one year or within a normal operating cycle. Current liabilities are typically settled using current assets, which are assets that are used up within one year. Current assets include cash or accounts receivables–or money owed by customers for sales. </p>
+  </div>
+
+  <div id="structure" class="col-md-4">
+    <p class="bold-font">Equity</p>
+    <p>Equity is typically referred to as shareholder equity (also known as shareholders' equity) which represents the amount of money that would be returned to a company’s shareholders if all of the assets were liquidated and all of the company's debt was paid off.</p>
+  </div>
+</div>
+
+</div>
+<script>
+
+  var long_short_data = [
+  {
+          key: 'CURRENT ASSETS',
+          values: [
+              {
+                  "label" : "HEXO" ,
+                  "value" : 266.514
+              } ,
+              {
+                  "label" : "CRON" ,
+                  "value" : 2408
+              } ,
+              {
+                  "label" : "APHA" ,
+                  "value" : 780.829
+              } ,
+              {
+                  "label" : "OGI" ,
+                  "value" : 232.471
+              } ,
+              {
+                  "label" : "TER" ,
+                  "value" : 68.47
+              } ,
+              {
+                  "label" : "WEED" ,
+                  "value" : 3864.341
+              } ,
+              {
+                  "label" : "ACB" ,
+                  "value" : 664.167
+              } ,
+              {
+                  "label" : "OH" ,
+                  "value" : 57.01
+              } ,
+              {
+                  "label" : "FIRE" ,
+                  "value" : 57.02
+              } ,
+              {
+                  "label" : "WMD" ,
+                  "value" : 53.67
+              }
+          ]
+      },
+      {
+          key: 'CURRENT_LIABILITIES',
+          values: [
+              {
+                  "label" : "HEXO" ,
+                  "value" : 47.32
+              } ,
+              {
+                  "label" : "CRON" ,
+                  "value" : 1433.66
+              } ,
+              {
+                  "label" : "APHA" ,
+                  "value" : 138
+              } ,
+              {
+                  "label" : "OGI" ,
+                  "value" : 66.42
+              } ,
+              {
+                  "label" : "TER" ,
+                  "value" : 86.03
+              } ,
+              {
+                  "label" : "WEED" ,
+                  "value" : 372.75
+              } ,
+              {
+                  "label" : "ACB" ,
+                  "value" : 436.36
+              } ,
+              {
+                  "label" : "OH" ,
+                  "value" : 62.8
+              } ,
+              {
+                  "label" : "FIRE" ,
+                  "value" : 31.9
+              } ,
+              {
+                  "label" : "WMD" ,
+                  "value" : 15.34
+              }
+          ]
+      },
+      {
+          key: 'EQUITY',
+          values: [
+              {
+                  "label" : "HEXO" ,
+                  "value" : 432.6
+              } ,
+              {
+                  "label" : "CRON" ,
+                  "value" : 1224.4
+              } ,
+              {
+                  "label" : "APHA" ,
+                  "value" : 1733.15
+              } ,
+              {
+                  "label" : "OGI" ,
+                  "value" : 336.3
+              } ,
+              {
+                  "label" : "TER" ,
+                  "value" : 151
+              } ,
+              {
+                  "label" : "WEED" ,
+                  "value" : 5893
+              } ,
+              {
+                  "label" : "ACB" ,
+                  "value" : 664.167
+              } ,
+              {
+                  "label" : "OH" ,
+                  "value" : 57.01
+              } ,
+              {
+                  "label" : "FIRE" ,
+                  "value" : 57.02
+              } ,
+              {
+                  "label" : "WMD" ,
+                  "value" : 15.34
+              }
+          
+          ]
+      }
+  ];
+
+  var chart;
+  nv.addGraph(function() {
+      chart = nv.models.multiBarHorizontalChart()
+          .x(function(d) { return d.label })
+          .y(function(d) { return d.value })
+          // .yErr(function(d) { return [-Math.abs(d.value * Math.random() * 0.3), Math.abs(d.value * Math.random() * 0.3)] })
+          .barColor(d3.scale.category20().range())
+          .duration(250)
+          .showControls(true)
+          .showLegend(true)
+          .legendPosition("bottom")
+          .controlsPosition("bottom")
+          .margin({left: 100})
+          .stacked(true);
+
+      chart.yAxis.tickFormat(d3.format(',.2f'));
+
+      chart.yAxis.axisLabel("$ 1000's");
+      chart.xAxis.axisLabel('Stock Ticker Symbol').axisLabelDistance(20);
+
+      d3.select('#chart1 svg')
+          .datum(long_short_data)
+          .call(chart);
+
+      nv.utils.windowResize(chart.update);
+
+      chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+      chart.state.dispatch.on('change', function(state){
+          nv.log('state', JSON.stringify(state));
+      });
+      return chart;
+  });
+
+</script>
+{% endblock %}
+
