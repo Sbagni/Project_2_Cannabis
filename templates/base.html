@@ -5,14 +5,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>OH</title>
+  <title>HOME PAGE</title>
   <meta name="discription" content="">
   <meta name="viewport" content="width=device-width, initial=scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" \
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="project3.css">
+  <link rel="stylesheet" href="../static/css/project3.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Khand&display=swap" rel="stylesheet">
+  <link href="build/nv.d3.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+  <script src="build/nv.d3.js"></script>
+  <script src="lib/stream_layers.js"></script>
 </head>
 
 
@@ -118,54 +122,8 @@
 <br>
 
   <!-- BODY OF THE PAGE -->
-<!-- BODY OF THE PAGE -->
-<div id="structure" class="container">
-
-    <div id="structure" class="row">
-      <div id="structure" class="col-md-8">
-        <p>Companie's chart </p>
-      </div>
-    
-      <div id="structure" class="col-md-4">
-        <p>Companie's comment </p>
-      </div>
-    </div>
-
-
-    <div id="structure" class="row">
-       <div id="structure" class="col-md-8">
-          <p>Companie's chart 2</p>
-        </div>
-          
-        <div id="structure" class="col-md-4">
-          <p>Companie's comment 2 </p>
-        </div>
-    </div>
-
-    <div id="structure" class="row">
-      <div id="structure" class="col-md-8">
-        <p>Companie's chart 3</p>
-      </div>
-    
-      <div id="structure" class="col-md-4">
-        <p>Companie's comment 3 </p>
-      </div>
-    </div>
-
-    <div id="structure" class="row">
-      <div id="structure" class="col-md-8">
-        <p>Companie's chart 4</p>
-      </div>
-    
-      <div id="structure" class="col-md-4">
-        <p>Companie's comment 4 </p>
-      </div>
-    </div>
-
-
-    </div>
-
-
+  {% block content %}
+  {% endblock %}
   <!-- For drop down -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
