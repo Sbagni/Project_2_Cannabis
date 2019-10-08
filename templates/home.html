@@ -36,10 +36,16 @@
     <p class="bold-font">Equity</p>
     <p>Equity is typically referred to as shareholder equity (also known as shareholders' equity) which represents the amount of money that would be returned to a company’s shareholders if all of the assets were liquidated and all of the company's debt was paid off.</p>
   </div>
-</div>
+  <meta id="bs_data" data-name="{{ data }}">
+  <meta id="assets" data-name="{{ assets }}">
 
-</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 <script>
+var bs_data = $('#bs_data').data("data");
+
+var assets = $('#assets').data("assets");
+       
 
   var long_short_data = [
   {
@@ -212,7 +218,13 @@
       });
       return chart;
   });
-
 </script>
+</div class='row'>
+
+{% for record in bs_data[0] %}
+<li> {{ record }} </li>
+{% endfor %}
+</div>
+
 {% endblock %}
 

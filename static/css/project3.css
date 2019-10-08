@@ -113,13 +113,13 @@ label {
   font-family: 'Khand', sans-serif;
   font-weight: bold;
 }
-text {
+.text {
   font: 12px sans-serif;
 }
-svg {
+.svg {
   display: block;
 }
-html, body, #chart1, svg {
+.html, body, #chart1, svg {
   margin: 0px;
   padding: 0px;
   height: 100%;
