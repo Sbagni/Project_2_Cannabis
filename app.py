@@ -34,45 +34,6 @@ def company_page(ticker):
 def team_page():
     return render_template(os.path.join('team.html'))
 
-# @app.route('/test')
-# def test_page():
-#     bs_results = pd.read_sql("select * from balance_sheet", engine)
-#     bs_data = jsonify(bs_results.to_dict(orient="records"))
-#     is_results = pd.read_sql("select * from income_statement", engine)
-#     is_data = jsonify(is_results.to_dict(orient="records"))
-#     return bs_data
-#     return is_data
-    # return render_template(os.path.join(ticker+'.html'), bs_data=bs_data, is_data=is_data)
-
-# @app.route('/acb')
-# def acb():
-#     return render_template(os.path.join('templates', 'acb.html'))
-
-# @app.route('/apha')
-# def apha():
-#     return render_template(os.path.join('templates', 'acb.html'))    
-
-# @app.route('/fire')
-#     return render_template(os.path.join('templates', 'fire.html'))
-
-# @app.route('/hexo')
-#     return render_template(os.path.join('templates', 'hexo.html'))
-
-# @app.route('/ogi')
-#     return render_template(os.path.join('templates', 'ogi.html'))
-
-# @app.route('/oh')
-#     return render_template(os.path.join('templates', 'oh.html'))
-
-# @app.route('/ter')
-#     return render_template(os.path.join('templates', 'ter.html'))
-
-# @app.route('/weed')
-#     return render_template(os.path.join('templates', 'weed.html'))
-
-# @app.route('/wmd')
-#     return render_template(os.path.join('templates', 'wmd.html'))
-
 
 # first der.
 @app.route("/balance")
@@ -88,7 +49,7 @@ def income():
     print("Session created")
     """display income statement"""
     is_results = pd.read_sql("select * from income_statement", engine)
-    is_tickers = list(is_results.ticker)
+    # is_tickers = list(is_results.ticker)
     is_data = jsonify(is_results.to_dict(orient="records"))
     return is_data
 if __name__ == '__main__':
