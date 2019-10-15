@@ -42,6 +42,11 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 <script>
+
+d3.json('http://localhost:5000/test/weed', data => {
+    console.log(data);
+});
+
 var bs_data = $('#bs_data').data("data");
 
 var assets = $('#assets').data("assets");

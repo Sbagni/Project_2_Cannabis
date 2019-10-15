@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="../static/js/stacked_area.js"></script>
+
+
+    <script>
+    var is_tickers = [{% for ticker in is_tickers %}
+                "{{ ticker }}",
+                {% endfor %}];
+
+    var is_dates = [{% for date in is_dates %}
+                "{{ date }}",
+                {% endfor %}];
+
+    var is_sales = [{% for salesDatum in is_sales %}
+                "{{ salesDatum }}",
+                {% endfor %}];
+
+    var is_cogs = [{% for cogsDatum in is_cogs %}
+                "{{ cogsDatum }}",
+                {% endfor %}];
+                
+    var is_sga = [{% for sgaDatum in is_sga %}
+                "{{ sgaDatum }}",
+                {% endfor %}];
+
+    console.log(`tickers: ${is_tickers.length}`);
+    console.log(`dates: ${is_dates.length}`);
+    console.log(`sales: ${is_sales.length}`);
+    console.log(`cogs: ${is_cogs.length}`);
+    console.log(`sga: ${is_sga.length}`);
+
+
+    // var ticker = 'apha'
+    // var graphDates, graphSales, graphCogs, graphSga = [],[],[],[]
+    // for (i=0;i<tickers.length;i++) {
+    //     if (tickers[i] == ticker) {
+    //         graphDates.append(dates[i]);
+    //         graphSales.push(sales[i])
+    //     }
+    // }
+
+    var chartDiv = document.getElementById('chartDiv');
+    var temp_dates1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+    var temp_dates2 = ["2016-02-29 00:00:00",
+                    "2016-05-31 00:00:00",
+                    "2016-08-31 00:00:00",
+                    "2016-11-30 00:00:00",
+                    "2017-02-28 00:00:00",
+                    "2017-05-31 00:00:00",
+                    "2017-08-31 00:00:00",
+                    "2017-11-30 00:00:00",
+                    "2018-02-28 00:00:00",
+                    "2018-05-31 00:00:00",
+                    "2018-08-31 00:00:00",
+                    "2018-11-30 00:00:00",
+                    "2019-02-28 00:00:00",
+                    "2019-05-31 00:00:00"];
+    var traces = [
+        {x: temp_dates2, y: is_cogs, name:'COGS', fill:'tozeroy', type:'scatter', stackgroup: 'one'},
+        {x: temp_dates2, y: is_sga, name:'SG&A', fill:'tonexty', type:'scatter', stackgroup: 'one'},
+        {x: temp_dates2, y: is_sales, name:'Sales', fill:'tozeroy', type:'scatter', stackgroup: 'one'}    
+    ];
+    Plotly.newPlot(chartDiv, traces, {margin:{t:0}});
+    </script>
+
+
+
+    </head>
+
+
+    <body>
+        <p>Here is a test chart</p>
+        <div id="chartDiv" style="width:600px;height:250px;">
+        </div>
+        <div id="chartDiv" style="width:100%;"></div>
+    </body>
+
+
+</html>
