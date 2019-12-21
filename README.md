@@ -1,4 +1,4 @@
-**Canadian Cannabis Comapnies**
+**Canadian Cannabis Companies**
 
 This project is designed to create a visualisation about current financial growth of top 10 Canadian Cannabis Comapanies. 
 There is not a lot of datasets available for these comapanies since they are still in their nascent stage. It began with extracting the datasets.Infact, we created the dataset for this analysis.
