@@ -11,9 +11,11 @@ Python was used to transform the data. It helped us to generate and clean the da
 
 
 **Libraries used for visualisation**
+
 Plotly, NVD3 and Leaflet
 
 ![Image of NVD3-graph](https://github.com/Levishantz/Project_2_Cannabis/blob/master/nvd3_bar_current_assets_and_equty.png)
+We used NVD3 to created this 
 
 We also used leaflet for this visualisation of various companies on the map and size of the purple circle is based on their 
 respective sales.
