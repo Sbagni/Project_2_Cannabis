@@ -6,7 +6,7 @@ There were not a lot of datasets available for these comapanies since they are s
 
 We used each company's balance sheet to extract the data. There was lot of information, however, we focussed on some of the key factors like profit, loss, current assets, liabilities, COGS (cost of goods sold), goodwill etc.
 
-Python was used to generate and clean the datasets.
+Python was used to transform the data. It helped us to generate and clean the datasets.
 
 
 
